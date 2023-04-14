@@ -1,0 +1,748 @@
+body {
+	width: 100%;
+	height: 100%;
+	
+	font-family: Arial;
+	font-size: 18px;
+	color: orange;
+	
+}
+
+#sess::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+#sess::-webkit-scrollbar-track {
+    background-color: orange;
+    border-radius: 100px;
+}
+ 
+ #sess::-webkit-scrollbar-thumb {
+    background-color: black;
+	background-color:hsl(0, 0%, 24%);
+    border-radius: 100px;
+}
+
+#sess {
+	  scrollbar-color: #D4AA70 #e4e4e4;
+}
+
+
+#sess2::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+#sess2::-webkit-scrollbar-track {
+    background-color: orange;
+    border-radius: 100px;
+}
+ 
+ #sess2::-webkit-scrollbar-thumb {
+    background-color: black;
+	background-color:hsl(0, 0%, 24%);
+    border-radius: 100px;
+}
+
+#sess2 {
+	  scrollbar-color: #D4AA70 #e4e4e4;
+}
+
+
+body::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+body::-webkit-scrollbar-track {
+    background-color: orange;
+    border-radius: 100px;
+}
+ 
+ body::-webkit-scrollbar-thumb {
+    background-color: black;
+	background-color:hsl(0, 0%, 24%);
+    border-radius: 100px;
+}
+
+body {
+	  scrollbar-color: #D4AA70 #e4e4e4;
+}
+
+
+
+		.controls {
+  visibility: hidden;
+  opacity: 0.5;
+  width: 400px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -200px;
+  background-color: black;
+  box-shadow: 3px 3px 5px black;
+  transition: 1s all;
+  display: flex;
+}
+
+.player:hover .controls, player:focus .controls {
+  opacity: 1;
+}
+
+@font-face {
+   font-family: 'HeydingsControlsRegular';
+   src: url('fonts/heydings_controls-webfont.eot');
+   src: url('fonts/heydings_controls-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/heydings_controls-webfont.woff') format('woff'),
+        url('fonts/heydings_controls-webfont.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+button:before {
+  font-family: HeydingsControlsRegular;
+  font-size: 20px;
+  position: relative;
+  content: attr(data-icon);
+  color: #aaa;
+  text-shadow: 1px 1px 0px black;
+}
+
+.timer {
+  line-height: 38px;
+  font-size: 10px;
+  font-family: monospace;
+  text-shadow: 1px 1px 0px black;
+  color: white;
+  flex: 5;
+  position: relative;
+}
+
+.timer div {
+  position: absolute;
+  background-color: rgba(255,255,255,0.2);
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 38px;
+  z-index: 2;
+}
+
+.timer span {
+  position: absolute;
+  z-index: 3;
+  left: 19px;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: orange;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+h2 {
+	 
+	 color: orange;
+	 margin-left: 50px;
+	 margin-top: 60px;
+	 height: 40px;
+	 padding-top: 6px;
+	 padding-bottom:0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: transparent;
+  color: orange;
+	background-color:hsl(100%, 1%, 9%);
+}
+
+.active, .collapsible:after {
+  background-color: orange;
+  color: black;
+	background-color:hsl(100%, 1%, 9%);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent;
+	background-color:hsl(100%, 1%, 9%);
+}
+
+
+.popu {
+    display: inline-block;
+
+}
+.popu .popuptex {
+	border: 1px solid orange;
+    visibility: hidden;
+    width: px;
+    background-color: #;
+    color: #;
+    text-align: left;
+    border-radius: 0px;
+    padding: 0px;
+    position:absolute;
+    left:0px;
+	float: left;
+	margin-left: 372px;
+	margin-top: 0px;
+}
+
+.popu .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0s;
+    animation: fadeIn 1s;
+	background-color: none;
+
+}
+
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	
+	 
+	
+}
+.grid-container2{
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	
+	 
+	
+}
+
+#ifr {
+	 overflow-y: hidden;
+}
+
+
+hr {
+	border: 0.5px solid ;
+	width: 100%;
+	
+}
+
+input {
+	border-radius: 0;
+}
+
+
+.grid-items {
+	width: 30%;
+}
+
+#img-lnk {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+	border-right:;
+  background-color: blue;
+	
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+	font-size: 50px;
+	color: orange;
+  margin-left: 0px;
+  border: none;
+}
+
+.openbtn {
+  height:50px;
+  width: 50px;
+  cursor: pointer;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: none;
+  float:left;
+  position: fixed;
+  background: transparent;
+}
+
+.openbtn img {
+	width: 36px;
+	height:36px;
+	
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.openbtn:after
+{
+	background-color: white;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*loader*/
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  margin: -76px 0 0 -76px;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid orange;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+/*.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}*/
+
+#home {
+  display: none;
+}
+
+/*index*/
+.index-section {
+	width: 100%;
+	height: 60%;
+	
+}
+
+.center {
+	margin-top: 5%;
+	margin-left: 20%;
+	float: left;
+	transform: translate (-50%, -50%);
+	width: 400px;
+	
+	border-radius: 10px;
+	background-color: transparent;
+	background-color:hsl(100%, 1%, 9%);
+}
+
+.center h1 {
+	
+	text-align: center;
+	color: #FFA500;
+	padding: 0 0 20px 0;
+	border-bottom: 1px  solid orange;
+}
+.center form {
+	
+	padding: 0 40px;
+	box-sizing: border-box;	
+	
+}
+form .txt_field {
+	
+	position: relative;
+	margin: 30px 0;
+}
+.txt_field input {
+	color: orange;
+	width : 200px;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 20px;
+	border: none;
+	background: white;
+	outline: none;
+}
+
+.txt_field input::after {
+	color: orange;
+	width : 200px;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 20px;
+	border: none;
+	background: white;
+	outline: none;
+}
+
+.txt_field span::before {
+	
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: orange;
+	transition: .5s;
+
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+	
+	top: -5px;
+	color: orange;
+	
+}
+.txt_field input:focus ~ span:: before
+.txt_field input:valid ~ span:: before {
+	
+	width: 100%;
+	color: red;
+}
+
+#login {
+	margin-top: 0;
+	width: 100px;
+	height: 25px;
+	border: ;
+	background: #FFA500;
+	border-radius: 0;
+	font-size: 20px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: ;
+	outline: none;
+	float: right;
+}
+
+/*index logo*/
+
+
+#right {
+	
+	float: right;
+	margin-top: 10%;
+	margin-right: 15%;
+	transform: translate (-50%, -50%);
+	width: 400px;
+	background: transparent;
+	border-radius: 10px;
+}
+
+/*footer*/
+footer {
+	float:left;
+	background: #FFA500;
+	color: #FFA500;
+	height: 150px;
+	position: relative;
+	width: 100%;
+	margin-top: 108px;
+	display: none;
+
+}
+
+footer img {
+	height: 20px;
+	
+}
+
+.box {
+	border: 1px solid orange;
+	margin-right: 40px;
+	margin-top: 10px;
+	padding:0;
+	width: 250px;
+	height: 200px;
+	
+	border-radius: 30px;
+}
+
+#b {
+  padding:5px 10px;
+  background:orange;
+  border:1px solid orange;
+  position:relative;
+  color:black;
+  border-radius:2px;
+  text-align:center;
+  float:left;
+  cursor:pointer
+}
+.hide_file {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+    
+}
+
+
+/**/
+
+li {
+	list-style-type: none;
+	width: 100%;
+	height: 50px;
+	border: ;
+	background: ;
+	border-radius: 0px;
+	color: orange;
+	border-bottom: 1px solid transparent;
+	cursor: pointer;
+	outline: none;
+	
+}
+
+img {
+	border-bottom: ;
+	box-shadow: 1px 0px 0px orange;
+}
+
+a {
+	text-decoration: none;
+	color: orange;
+
+}
+
+.container {
+	float: ;
+	padding-right: 0;
+}
+
+
+
+h2 {font-size: 20px;
+	color: black;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+.selection {
+	float: right;
+	width: 85%;
+	height:3px;
+	background: ;
+}
+.menu {
+	float: left;
+	padding-left: 0;
+	margin-top:0;
+	position:fixed;
+	width: 15%;
+	height:641px;
+	background: ;
+	border-right:1px solid #f39e7c; 
+	box-shadow: 0px 0px 18px orange;
+}
+
+.menu-items {
+	height:auto;
+	width: 90%;
+	background: ;
+	border: 2px ;
+	margin-top: 30px;
+}
+
+.display {
+	float: left;
+	position: ;
+	height:auto;
+	width: 60%;
+	background: ;
+	margin-left: 60px;
+	
+}
+
+@keyframes example {
+
+}
+
+.display-boxes {
+	float: left;
+	height:auto;
+	width: 60%;
+	background: ;
+	border: 1px solid #orange;
+	border-radius: 25px 0px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left:150px;
+	font-family: Arial;
+	font-size: 15px;
+	color: orange;
+	box-shadow: 5px 10px 18px orange;
+	animation-name: example;
+  animation-duration: 4s;
+}
+
+.display-boxes a {
+	font-family: Arial;
+	font-size: 20px;
+	color: orange;
+}
+
+@keyframes cat {
+	from {opacity: 0;}
+	to {opacity: 5;}
+}
+
+.categories {
+	float: right;
+	margin-left: 850px;
+	height:100%;
+	width: 40%;
+	background: ;
+	border-left: 1px solid orange;
+	position: fixed;
+
+	animation-name: cat;
+  animation-duration: 0s;
+}
+
+/*ass-blocks*/
+#ass-blocks {
+	float: left;
+	height:auto;
+	width: 60%;
+	background: ;
+	border: 2px solid #f39e7c;
+	border-radius: 0px;
+	margin-top: 10px;
+	margin-left:150px;
+	font-size: 20px;
+	color: black;
+	font-weight: 700;
+}
+
+
+/*pop up menu*/
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	
+}
+
+.popuptext {
+	visibility: hidden;
+	width: 250px;
+	border-radius: 0;
+	padding: 0px ;
+	position: absolute;
+	z-index: 1;
+	bottom: 1;
+	left: 50%;
+	margin-top: 0px;
+	margin-left: -80px;
+	margin-bottom: -80px;
+
+
+}
+
+.popuptext::after {
+	
+	position: relative;
+	top: 100%;
+	left: 50%;
+	margin-left: 15px;
+	border-width: 5px;
+	border-style:solid;
+	border-color: ;
+
+}
+
+.popup .show {
+	visibility: visible;
+	background: black;
+	border: 1px solid orange;
+	background-color:hsl(0, 0%, 24%);
+	-webkit-animation: fadeIn 0s;
+	animation: fadeIn 0s;
+
+}
+
+@-webkit-keyframes fadeIn{
+	from {opacity: 0;}
+	to {opacity: 5;}
+}
+
+@keyframes fadeIn{
+	from {opacity: 0;}
+	to {opacity: 5;}
+}
+
+#input {
+	background: transparent;
+	font-size: 20px;
+	color: orange;
+	font-weight: 700;
+	border: none;
+}
